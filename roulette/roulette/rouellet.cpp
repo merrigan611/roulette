@@ -27,7 +27,7 @@ void rouellet::playGame(){
             int landedOn = spin();
             std::string color = track(landedOn);
             
-            if(bet==landedOn){
+            if(pot==landedOn){
                 money += pot * 2;
             }
             else{
