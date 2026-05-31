@@ -27,7 +27,7 @@ void rouellet::playGame(){
             int landedOn = spin();
             std::string color = track(landedOn);
             
-            if(landedOn % 2 == 1 && color != "green"){
+            if(bet==landedOn){
                 money += pot * 2;
             }
             else{
@@ -42,7 +42,7 @@ void rouellet::playGame(){
     else{
         std::cout << "Game cancelled." << std::endl;
     }
-
+    results();
 }
 
 int rouellet::bet(int ThePot){
